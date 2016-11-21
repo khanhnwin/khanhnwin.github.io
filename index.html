@@ -1,8 +1,24 @@
 ---
 layout: default
-title: Khanh Nguyen, GitHub Pages Tutorial
+title: Khanh's Blog
 ---
-<div class="blurb">
-	<h1>Hi there, I'm Khanh Nguyen!</h1>
-	<p>I'm a CS student at Drexel, photographer, and WoSo fanatic. <a href="/about">Read more about my life...</a></p>
-</div><!-- /.blurb -->
+	<div class="posts">
+		{% for post in site.posts %}
+			<div class="post">
+					<h4 class="date">{{ post.date | date: "%B %-d, %Y" }}</h4>
+					<a href="{{ post.url }}" title="{{ post.title }}"><h2 class="title">{{ post.title }}</h2></a>
+				<img src="{{ site.url }}/assets/post_images/2016-11-21-khanh-nguyen-first-post/featured.jpeg" />
+				<div class="blurb">
+					{{ post.excerpt }}
+					<p class="read_more"><a href="{{ post.url }}" title="{{ post.title }}">Read More >></a></p>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+
+	<!--<ul class="posts">
+
+	  {% for post in site.posts %}
+	    <li><span>{{ post.date | date: "%B %-d, %Y" }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><p>{{ post.excerpt }}</p></li>
+	  {% endfor %}
+	</ul-->

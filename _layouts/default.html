@@ -3,27 +3,26 @@
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
+			<link href="https://fonts.googleapis.com/css?family=BioRhyme:300,400,700" rel="stylesheet">
 			<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
+			<div class="page_container">
+				<div class="header">
+					<h1 class="site_title">Khanh's Blog</h1>
+					<nav>
+			    		<ul>
+			        		<li><a href="/">Home</a></li>
+				        	<li><a href="/about">About</a></li>
+			        		<!--<li><a href="/cv">CV</a></li>-->
+			    		</ul>
+					</nav>
+				</header>
+				<div class="container">
 
-			{{ content }}
+				{{ content }}
 
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:khanhnwin@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/khanhnwin">github.com/khanhnwin</a></li>
-				</ul>
-			</footer>
+				</div><!-- /.container -->
+			</div>
 		</body>
 	</html>

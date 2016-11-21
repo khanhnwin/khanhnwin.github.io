@@ -1,0 +1,157 @@
+//
+
+$lightGrey: #FCFCFC
+$SteelBlue: #237AA6
+$black: #404040
+
+$serifFont: 'BioRhyme', serif
+
+body
+  background-color: $lightGrey
+  font-family: $serifFont
+  font-weight: 400
+  font-size: 18px
+  color: $black
+  padding-bottom: 3rem
+
+a
+  text-decoration: none
+  color: $SteelBlue
+
+  &:hover, &:focus, &:visited
+    text-decoration: none
+    color: $SteelBlue
+
+  &:hover
+
+
+  @media (max-width: 1130px)
+    text-align: center
+
+.page_container
+  width: 50%
+  margin: 0 auto
+
+  @media (max-width: 1130px)
+    width: 90%
+
+.site_title
+  display: inline-block
+  text-transform: uppercase
+  
+  @media (max-width: 1130px)
+    display: block
+    text-align: center
+    margin-bottom: .5rem
+
+nav
+  display: inline-block
+  margin-right: 0
+  text-align: center
+
+  @media (max-width: 1130px)
+    display: block
+    margin-top: .5rem
+
+  ul
+    padding: 0
+    font-family: $serifFont
+    text-transform: uppercase
+
+    li
+      display: inline-block
+      margin: .5rem 1rem
+
+    li:before
+      content: "/ "
+
+// BLOG INDEX //
+
+.page_title
+  text-align: center
+  text-transform: uppercase
+
+  @media (max-width: 1130px)
+    display: block
+    text-align: center
+    margin-bottom: .5rem
+
+.posts
+  width: 100%
+  margin: 0 auto
+
+  p.read_more
+    font-weight: 700
+    font-family: $serifFont
+    text-align: right
+
+  .post:first-child
+    border-top: 1px solid $SteelBlue
+
+  .post
+    border-bottom: 1px solid $SteelBlue
+
+    .date
+      font-family: $serifFont
+      margin-bottom: .5rem
+      font-weight: 200
+      text-align: center
+
+    .title
+      text-transform: uppercase
+      margin-top: .75rem
+      text-align: center
+
+    .blurb
+      line-height: 160%
+
+    img
+      width: 100%
+      height: auto
+
+// POST PAGE //
+.post_page
+    border-top: 1px solid $SteelBlue
+    border-bottom: 1px solid $SteelBlue
+
+    .meta
+      margin-bottom: .5rem
+      font-weight: 200
+      text-align: center
+
+    .post_title
+      margin-top: .75rem
+      text-align: center
+      text-transform: capitalize
+      color: $SteelBlue
+
+    img.outset
+      width: 130%
+      height: auto
+      margin: 0 -15%
+
+    img.inset
+      width: 100%
+      height: auto
+
+    figure
+      margin: auto 0
+
+    figcaption
+      font-weight: 200
+      text-align: center
+
+// ABOUT PAGE //
+.about
+  h1
+    text-transform: uppercase
+    text-align: center
+
+  img.outset
+    width: 130%
+    height: auto
+    margin: 0 -15%
+
+  img.inset
+    width: 100%
+    height: auto

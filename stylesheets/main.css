@@ -1,43 +1,184 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+  background-color: #FCFCFC;
+  font-family: "BioRhyme", serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #404040;
+  padding-bottom: 3rem;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
+
 a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+  text-decoration: none;
+  color: #237AA6;
 }
 
-ul.posts {
-    margin: 20px auto 40px;
-    font-size: 1.5em;
+a:hover, a:focus, a:visited {
+  text-decoration: none;
+  color: #237AA6;
 }
 
-ul.posts li {
-    list-style: none;
+@media (max-width: 1130px) {
+  a {
+    text-align: center;
+  }
+}
+
+.page_container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1130px) {
+  .page_container {
+    width: 90%;
+  }
+}
+
+.site_title {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1130px) {
+  .site_title {
+    display: block;
+    text-align: center;
+    margin-bottom: .5rem;
+  }
+}
+
+nav {
+  display: inline-block;
+  margin-right: 0;
+  text-align: center;
+}
+
+@media (max-width: 1130px) {
+  nav {
+    display: block;
+    margin-top: .5rem;
+  }
+}
+
+nav ul {
+  padding: 0;
+  font-family: "BioRhyme", serif;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: .5rem 1rem;
+}
+
+nav ul li:before {
+  content: "/ ";
+}
+
+.page_title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1130px) {
+  .page_title {
+    display: block;
+    text-align: center;
+    margin-bottom: .5rem;
+  }
+}
+
+.posts {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.posts p.read_more {
+  font-weight: 700;
+  font-family: "BioRhyme", serif;
+  text-align: right;
+}
+
+.posts .post:first-child {
+  border-top: 1px solid #237AA6;
+}
+
+.posts .post {
+  border-bottom: 1px solid #237AA6;
+}
+
+.posts .post .date {
+  font-family: "BioRhyme", serif;
+  margin-bottom: .5rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.posts .post .title {
+  text-transform: uppercase;
+  margin-top: .75rem;
+  text-align: center;
+}
+
+.posts .post .blurb {
+  line-height: 160%;
+}
+
+.posts .post img {
+  width: 100%;
+  height: auto;
+}
+
+.post_page {
+  border-top: 1px solid #237AA6;
+  border-bottom: 1px solid #237AA6;
+}
+
+.post_page .meta {
+  margin-bottom: .5rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.post_page .post_title {
+  margin-top: .75rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: #237AA6;
+}
+
+.post_page img.outset {
+  width: 130%;
+  height: auto;
+  margin: 0 -15%;
+}
+
+.post_page img.inset {
+  width: 100%;
+  height: auto;
+}
+
+.post_page figure {
+  margin: auto 0;
+}
+
+.post_page figcaption {
+  font-weight: 200;
+  text-align: center;
+}
+
+.about h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about img.outset {
+  width: 130%;
+  height: auto;
+  margin: 0 -15%;
+}
+
+.about img.inset {
+  width: 100%;
+  height: auto;
 }
