@@ -251,10 +251,6 @@ nav ul li {
   }
 }
 
-.post_page img:hover {
-  cursor: zoom-in;
-}
-
 .post_page img.outset {
   width: 130%;
   height: auto;
