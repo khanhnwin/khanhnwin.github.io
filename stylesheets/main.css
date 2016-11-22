@@ -37,7 +37,7 @@ p {
 
 @media screen and (max-device-width: 800px) {
   p {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 
@@ -223,7 +223,7 @@ nav ul li {
   text-transform: capitalize;
   color: #237AA6;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 @media screen and (max-device-width: 800px) {
