@@ -35,6 +35,13 @@ p {
   line-height: 160%;
 }
 
+@media only screen and (max-device-width: 500px) {
+  p {
+    font-size: 22px;
+    line-height: 180%;
+  }
+}
+
 .page_container {
   width: 55%;
   margin: 0 auto;
@@ -180,10 +187,6 @@ nav ul li {
   max-height: 100%;
 }
 
-#fullScreenImage img:hover {
-  cursor: zoom-out;
-}
-
 .post_page {
   border-bottom: 1px solid #237AA6;
   padding: 2rem auto 3rem auto;
@@ -201,10 +204,6 @@ nav ul li {
   text-transform: capitalize;
   color: #237AA6;
   font-weight: 2rem;
-}
-
-.post_page img:hover {
-  cursor: zoom-in;
 }
 
 .post_page img.outset {
