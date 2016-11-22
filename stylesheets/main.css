@@ -1,4 +1,5 @@
 body {
+  border-top: 5px solid #237AA6;
   background-color: #FCFCFC;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -35,7 +36,7 @@ p {
 }
 
 .page_container {
-  width: 50%;
+  width: 55%;
   margin: 0 auto;
 }
 
@@ -49,6 +50,10 @@ p {
   .page_container {
     width: 70%;
   }
+}
+
+.container {
+  border-top: 1px solid #237AA6;
 }
 
 .site_title {
@@ -121,10 +126,6 @@ nav ul li {
   text-decoration: underline;
 }
 
-.posts .post:first-child {
-  border-top: 1px solid #237AA6;
-}
-
 .posts .post {
   border-bottom: 1px solid #237AA6;
 }
@@ -153,9 +154,41 @@ nav ul li {
   height: auto;
 }
 
+.hidden {
+  display: none;
+  width: 0vw;
+  height: 0vh;
+}
+
+.active {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+#fullScreenImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FCFCFC;
+}
+
+#fullScreenImage img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (orientation: portrait) {
+  #fullScreenImage img {
+    margin-top: 25%;
+  }
+}
+
 .post_page {
-  border-top: 1px solid #237AA6;
   border-bottom: 1px solid #237AA6;
+  padding: 2rem auto 3rem auto;
 }
 
 .post_page .meta {
@@ -188,12 +221,19 @@ nav ul li {
 }
 
 .post_page figcaption {
+  font-family: "Martel", serif;
   font-weight: 200;
   text-align: center;
 }
 
+.post_page blockquote {
+  font-size: 1.75rem;
+  padding: .1rem 2rem;
+  border-left: solid 3px #dfe0e0;
+  font-style: italic;
+}
+
 .about {
-  border-top: 1px solid #237AA6;
   border-bottom: 1px solid #237AA6;
 }
 

@@ -8,7 +8,7 @@ title: Khanh's Blog
 					<h4 class="date">{{ post.date | date: "%B %-d, %Y" }}</h4>
 					<a href="{{ post.url }}" title="{{ post.title }}"><h2 class="title">{{ post.title }}</h2></a>
 					{% if post.featured-image == true %}
-						<img src="{{ post.assets }}featured.jpeg" />
+						<img src="{{ post.assets }}featured.jpg" />
 					{% endif %}
 				<div class="blurb">
 					{{ post.excerpt }}
