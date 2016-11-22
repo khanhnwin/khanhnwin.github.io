@@ -167,7 +167,13 @@ nav ul li {
   text-transform: uppercase;
   margin-top: .75rem;
   text-align: center;
-  font-size: 4rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-device-width: 800px) {
+  .posts .post .title {
+    font-size: 4rem;
+  }
 }
 
 .posts .post .blurb {
@@ -223,12 +229,12 @@ nav ul li {
   text-transform: capitalize;
   color: #237AA6;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 @media screen and (max-device-width: 800px) {
   .post_page .post_title {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
