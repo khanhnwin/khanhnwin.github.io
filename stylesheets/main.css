@@ -37,7 +37,7 @@ p {
 
 @media screen and (max-device-width: 800px) {
   p {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 }
 
