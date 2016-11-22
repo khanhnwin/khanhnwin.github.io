@@ -180,10 +180,8 @@ nav ul li {
   max-height: 100%;
 }
 
-@media (orientation: portrait) {
-  #fullScreenImage img {
-    margin-top: 25%;
-  }
+#fullScreenImage img:hover {
+  cursor: zoom-out;
 }
 
 .post_page {
@@ -203,6 +201,10 @@ nav ul li {
   text-transform: capitalize;
   color: #237AA6;
   font-weight: 2rem;
+}
+
+.post_page img:hover {
+  cursor: zoom-in;
 }
 
 .post_page img.outset {

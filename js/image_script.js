@@ -1,10 +1,6 @@
 $('img').on('click', function(){
-  if ( $(this).width() > $(this).height() ) {
-    document.getElementById('fullScreenImage').innerHTML = "<img class=\'landscape\' src=\'" +  $(this).attr('src') + "\'/>";
-  }
-  else {
-    document.getElementById('fullScreenImage').innerHTML = "<img class=\'portrait\' src=\'" +  $(this).attr('src') + "\'/>";
-  }
+
+  document.getElementById('fullScreenImage').innerHTML = "<img src=\'" +  $(this).attr('src') + "\'/>";
 
   var top = $(window).scrollTop();
   console.log(String(top));

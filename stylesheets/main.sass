@@ -162,13 +162,8 @@ nav
     max-width: 100%
     max-height: 100%
 
-    @media (orientation: portrait)
-      margin-top: 25%
-
-
-
-
-
+    &:hover
+      cursor: zoom-out
 
 .post_page
   border-bottom: 1px solid $SteelBlue
@@ -185,6 +180,9 @@ nav
     text-transform: capitalize
     color: $SteelBlue
     font-weight: 2rem
+
+  img:hover
+    cursor: zoom-in
 
   img.outset
     width: 130%
