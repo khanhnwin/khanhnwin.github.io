@@ -37,8 +37,8 @@ p {
 
 @media only screen and (max-device-width: 500px) {
   p {
-    font-size: 22px;
     line-height: 180%;
+    font-size: 22px;
   }
 }
 
@@ -56,6 +56,12 @@ p {
 @media (max-width: 1130px) {
   .page_container {
     width: 70%;
+  }
+}
+
+@media only screen and (max-device-width: 500px) {
+  .page_container {
+    width: 90%;
   }
 }
 
