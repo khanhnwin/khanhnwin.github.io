@@ -41,10 +41,10 @@ p {
   line-height: 160%;
 }
 
-@media only screen and (max-device-width: 500px) {
+@media only screen and (max-width: 500px) {
   p {
     line-height: 180%;
-    font-size: 28px;
+    font-size: 36px;
   }
 }
 
