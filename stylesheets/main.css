@@ -10,6 +10,12 @@ body {
   margin: 0 auto;
 }
 
+@media only screen and (max-device-width: 500px) {
+  body {
+    font-size: 22px;
+  }
+}
+
 a {
   text-decoration: none;
   color: #237AA6;
@@ -38,7 +44,6 @@ p {
 @media only screen and (max-device-width: 500px) {
   p {
     line-height: 180%;
-    font-size: 22px;
   }
 }
 
