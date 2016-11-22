@@ -35,6 +35,12 @@ p {
   line-height: 160%;
 }
 
+@media screen and (max-device-width: 800px) {
+  p {
+    font-size: 2rem;
+  }
+}
+
 .page_container {
   width: 55%;
   margin: 0 auto;
@@ -161,7 +167,7 @@ nav ul li {
   text-transform: uppercase;
   margin-top: .75rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .posts .post .blurb {
