@@ -1,10 +1,12 @@
 body {
   background-color: #FCFCFC;
-  font-family: "BioRhyme", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #404040;
   padding-bottom: 3rem;
+  min-width: 500px;
+  margin: 0 auto;
 }
 
 a {
@@ -23,14 +25,29 @@ a:hover, a:focus, a:visited {
   }
 }
 
+.header a {
+  color: #404040;
+}
+
+p {
+  font-family: "Martel", serif;
+  line-height: 160%;
+}
+
 .page_container {
   width: 50%;
   margin: 0 auto;
 }
 
+@media (max-width: 1360px) {
+  .page_container {
+    width: 65%;
+  }
+}
+
 @media (max-width: 1130px) {
   .page_container {
-    width: 90%;
+    width: 70%;
   }
 }
 
@@ -39,7 +56,7 @@ a:hover, a:focus, a:visited {
   text-transform: uppercase;
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 855px) {
   .site_title {
     display: block;
     text-align: center;
@@ -53,7 +70,7 @@ nav {
   text-align: center;
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 855px) {
   nav {
     display: block;
     margin-top: .5rem;
@@ -62,17 +79,21 @@ nav {
 
 nav ul {
   padding: 0;
-  font-family: "BioRhyme", serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+}
+
+nav ul li:first-child {
+  padding-left: 2rem;
+}
+
+nav ul li:last-child {
+  padding-right: 2rem;
 }
 
 nav ul li {
   display: inline-block;
   margin: .5rem 1rem;
-}
-
-nav ul li:before {
-  content: "/ ";
 }
 
 .page_title {
@@ -95,8 +116,9 @@ nav ul li:before {
 
 .posts p.read_more {
   font-weight: 700;
-  font-family: "BioRhyme", serif;
-  text-align: right;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .posts .post:first-child {
@@ -108,7 +130,7 @@ nav ul li:before {
 }
 
 .posts .post .date {
-  font-family: "BioRhyme", serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: .5rem;
   font-weight: 200;
   text-align: center;
@@ -118,10 +140,12 @@ nav ul li:before {
   text-transform: uppercase;
   margin-top: .75rem;
   text-align: center;
+  font-size: 2rem;
 }
 
 .posts .post .blurb {
   line-height: 160%;
+  font-family: "Martel", serif;
 }
 
 .posts .post img {
@@ -145,6 +169,7 @@ nav ul li:before {
   text-align: center;
   text-transform: capitalize;
   color: #237AA6;
+  font-weight: 2rem;
 }
 
 .post_page img.outset {
@@ -165,6 +190,11 @@ nav ul li:before {
 .post_page figcaption {
   font-weight: 200;
   text-align: center;
+}
+
+.about {
+  border-top: 1px solid #237AA6;
+  border-bottom: 1px solid #237AA6;
 }
 
 .about h1 {

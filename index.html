@@ -7,10 +7,12 @@ title: Khanh's Blog
 			<div class="post">
 					<h4 class="date">{{ post.date | date: "%B %-d, %Y" }}</h4>
 					<a href="{{ post.url }}" title="{{ post.title }}"><h2 class="title">{{ post.title }}</h2></a>
-				<img src="{{ site.url }}/assets/post_images/2016-11-21-khanh-nguyen-first-post/featured.jpeg" />
+					{% if post.featured-image == true %}
+						<img src="{{ post.assets }}featured.jpeg" />
+					{% endif %}
 				<div class="blurb">
 					{{ post.excerpt }}
-					<p class="read_more"><a href="{{ post.url }}" title="{{ post.title }}">Read More >></a></p>
+					<p class="read_more"><a href="{{ post.url }}" title="{{ post.title }}">Read More</a></p>
 				</div>
 			</div>
 		{% endfor %}

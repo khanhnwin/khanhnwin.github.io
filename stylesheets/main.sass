@@ -4,15 +4,18 @@ $lightGrey: #FCFCFC
 $SteelBlue: #237AA6
 $black: #404040
 
-$serifFont: 'BioRhyme', serif
+$sansSerifFont: 'Montserrat', sans-serif
+$serifFont: 'Martel', serif
 
 body
   background-color: $lightGrey
-  font-family: $serifFont
+  font-family: $sansSerifFont
   font-weight: 400
   font-size: 18px
   color: $black
   padding-bottom: 3rem
+  min-width: 500px
+  margin: 0 auto
 
 a
   text-decoration: none
@@ -28,18 +31,29 @@ a
   @media (max-width: 1130px)
     text-align: center
 
+.header
+  a
+    color: $black
+
+p
+  font-family: $serifFont
+  line-height: 160%
+
 .page_container
   width: 50%
   margin: 0 auto
 
+  @media (max-width: 1360px)
+    width: 65%
+
   @media (max-width: 1130px)
-    width: 90%
+    width: 70%
 
 .site_title
   display: inline-block
   text-transform: uppercase
-  
-  @media (max-width: 1130px)
+
+  @media (max-width: 855px)
     display: block
     text-align: center
     margin-bottom: .5rem
@@ -49,21 +63,25 @@ nav
   margin-right: 0
   text-align: center
 
-  @media (max-width: 1130px)
+  @media (max-width: 855px)
     display: block
     margin-top: .5rem
 
   ul
     padding: 0
-    font-family: $serifFont
+    font-family: $sansSerifFont
     text-transform: uppercase
+
+    li:first-child
+      padding-left: 2rem
+
+    li:last-child
+      padding-right: 2rem
 
     li
       display: inline-block
       margin: .5rem 1rem
 
-    li:before
-      content: "/ "
 
 // BLOG INDEX //
 
@@ -82,8 +100,9 @@ nav
 
   p.read_more
     font-weight: 700
-    font-family: $serifFont
-    text-align: right
+    font-family: $sansSerifFont
+    text-align: center
+    text-decoration: underline
 
   .post:first-child
     border-top: 1px solid $SteelBlue
@@ -92,7 +111,7 @@ nav
     border-bottom: 1px solid $SteelBlue
 
     .date
-      font-family: $serifFont
+      font-family: $sansSerifFont
       margin-bottom: .5rem
       font-weight: 200
       text-align: center
@@ -101,9 +120,11 @@ nav
       text-transform: uppercase
       margin-top: .75rem
       text-align: center
+      font-size: 2rem
 
     .blurb
       line-height: 160%
+      font-family: $serifFont
 
     img
       width: 100%
@@ -124,6 +145,7 @@ nav
       text-align: center
       text-transform: capitalize
       color: $SteelBlue
+      font-weight: 2rem
 
     img.outset
       width: 130%
@@ -143,6 +165,9 @@ nav
 
 // ABOUT PAGE //
 .about
+  border-top: 1px solid $SteelBlue
+  border-bottom: 1px solid $SteelBlue
+
   h1
     text-transform: uppercase
     text-align: center
