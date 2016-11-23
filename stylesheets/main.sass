@@ -53,6 +53,9 @@ p
   @media (max-width: 1130px)
     width: 70%
 
+  @media (max-width: 800px)
+    width: 90%
+
   @media screen and (max-device-width: 800px)
     width: 90%
 
@@ -63,7 +66,7 @@ p
   display: inline-block
   text-transform: uppercase
 
-  @media (max-width: 855px)
+  @media (max-width: 995px)
     display: block
     text-align: center
     margin-bottom: .5rem
@@ -81,7 +84,7 @@ nav
     display: block
     font-size: 3rem
 
-  @media (max-width: 855px)
+  @media (max-width: 995px)
     display: block
     margin-top: .5rem
 
@@ -135,7 +138,6 @@ nav
         font-size: 2rem
 
     .title
-      text-transform: uppercase
       margin-top: .75rem
       text-align: center
       font-size: 2rem
@@ -177,7 +179,6 @@ nav
     max-height: 100%
 
 .post_page
-  border-bottom: 1px solid $SteelBlue
   padding: 2rem auto 3rem auto
 
   .meta
@@ -205,6 +206,10 @@ nav
     margin: 0 -15%
 
     @media screen and (max-device-width: 800px)
+      width: 100%
+      margin: 0 auto
+
+    @media (max-width: 800px)
       width: 100%
       margin: 0 auto
 
@@ -242,3 +247,46 @@ nav
   img.inset
     width: 100%
     height: auto
+
+// ARCHIVE //
+
+.archive
+  padding-top: 1rem
+  text-align: left
+
+  @media screen and (max-device-width: 800px)
+    font-size: 3rem
+    text-align: center
+
+
+  .year, .month
+    font-family: $sansSerifFont
+
+  .year
+    font-family: $sansSerifFont
+
+  .month
+    margin-top: 2rem
+    margin-bottom: 0
+    text-transform: uppercase
+    font-family: $serifFont
+
+  .post
+    margin: .5rem 0
+
+    h4
+      display: inline-block
+      margin: 0
+      font-family: $sansSerifFont
+
+      @media screen and (max-device-width: 800px)
+        font-size: 3rem
+
+
+    a
+      font-family: $serifFont
+      font-weight: 700
+      margin-left: 1rem
+
+      @media screen and (max-device-width: 800px)
+        font-size: 3rem

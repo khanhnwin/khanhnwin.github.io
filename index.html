@@ -5,7 +5,7 @@ title: Khanh's Blog
 	<div class="posts">
 		{% for post in site.posts %}
 			<div class="post">
-					<h4 class="date">{{ post.date | date: "%B %-d, %Y" }}</h4>
+					<h4 class="date">{{ post.date | date: "%A – %B %-d, %Y" }}</h4>
 					<a href="{{ post.url }}" title="{{ post.title }}"><h2 class="title">{{ post.title }}</h2></a>
 					{% if post.featured-image == true %}
 						<img src="{{ post.assets }}featured.jpg" />

@@ -3,20 +3,28 @@ layout: default
 ---
 <div class="archive">
   {% for post in site.posts %}
+      {% assign postYear = post.date | date: '%Y' %}
+      {% assign postMonth = post.date | date: '%B' %}
 
-    {% if currentYear != post.date | date: "%Y" %}
-      {% assign currentYear = post.date | date: "%Y" %}
-      <h3>{{ currentYear }}</h3>
-    {% endif %}
+      {% if currentYear !=  postYear %}
+        {% assign currentYear = postYear %}
+        <!--<br>
+        <h4 class='year'>{{ currentYear }}</h4>-->
+        {% if currentMonth !=  postMonth %}
+          {% assign currentMonth = postMonth %}
+          <h4 class='month'>{{ currentMonth }} {{ currentYear }}</h4>
+        {% endif %}
+      {% elsif currentMonth !=  postMonth %}
+        {% assign currentMonth = postMonth %}
+        <h4 class='month'>{{ currentMonth }}</h4>
+      {% endif %}
 
-    {% if currentMonth != post.date | date: "%B" %}
-      {% assign currentMonth = post.date | date: "%B" %}
-      <h4>{{ currentMonth }}</h4>
-    {% endif %}
+
+
 
     <div class="post">
-      <h4>{{ post.date | date: "%-m/%-d" }}</h4><a href="{{ post.url }}" title="{{ post.title }}"><p class="title">{{ post.title }}</p></a>
+      <h4>{{ post.date | date: "%m/%-d" }}</h4><a href="{{ post.url }}" title="{{ post.title }}"> {{ post.title }}</a>
     </div>
-
   {% endfor %}
 </div>
+</a>
