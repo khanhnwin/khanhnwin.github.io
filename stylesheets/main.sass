@@ -27,6 +27,7 @@ a
     color: $SteelBlue
 
   &:hover
+    cursor: pointer
 
 
   @media (max-width: 1130px)
@@ -65,6 +66,9 @@ p
 .site_title
   display: inline-block
   text-transform: uppercase
+
+  &:hover
+    color: $SteelBlue
 
   @media (max-width: 995px)
     display: block
@@ -259,13 +263,7 @@ nav
     text-align: center
 
 
-  .year, .month
-    font-family: $sansSerifFont
-
-  .year
-    font-family: $sansSerifFont
-
-  .month
+  .meta
     margin-top: 2rem
     margin-bottom: 0
     text-transform: uppercase

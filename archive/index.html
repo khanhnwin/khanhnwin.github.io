@@ -3,20 +3,11 @@ layout: default
 ---
 <div class="archive">
   {% for post in site.posts %}
-      {% assign postYear = post.date | date: '%Y' %}
-      {% assign postMonth = post.date | date: '%B' %}
+      {% assign postMeta = post.date | date: '%B %Y' %}
 
-      {% if currentYear !=  postYear %}
-        {% assign currentYear = postYear %}
-        <!--<br>
-        <h4 class='year'>{{ currentYear }}</h4>-->
-        {% if currentMonth !=  postMonth %}
-          {% assign currentMonth = postMonth %}
-          <h4 class='month'>{{ currentMonth }} {{ currentYear }}</h4>
-        {% endif %}
-      {% elsif currentMonth !=  postMonth %}
-        {% assign currentMonth = postMonth %}
-        <h4 class='month'>{{ currentMonth }}</h4>
+      {% if current !=  postMeta %}
+        {% assign current = postMeta %}
+        <h4 class='meta'>{{ current }}</h4>
       {% endif %}
 
 

@@ -20,6 +20,10 @@ a:hover, a:focus, a:visited {
   color: #237AA6;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 1130px) {
   a {
     text-align: center;
@@ -77,6 +81,10 @@ p {
 .site_title {
   display: inline-block;
   text-transform: uppercase;
+}
+
+.site_title:hover {
+  color: #237AA6;
 }
 
 @media (max-width: 995px) {
@@ -329,15 +337,7 @@ nav ul li {
   }
 }
 
-.archive .year, .archive .month {
-  font-family: "Montserrat", sans-serif;
-}
-
-.archive .year {
-  font-family: "Montserrat", sans-serif;
-}
-
-.archive .month {
+.archive .meta {
   margin-top: 2rem;
   margin-bottom: 0;
   text-transform: uppercase;
