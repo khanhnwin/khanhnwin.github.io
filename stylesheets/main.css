@@ -145,14 +145,14 @@ nav ul li {
   text-align: center;
 }
 
-.page_404 h2 {
-  font-size: 3em;
-  margin-bottom: 0;
-}
-
 .page_404 h1 {
   font-size: 5em;
   margin: .75rem;
+}
+
+.page_404 h2 {
+  font-size: 3em;
+  margin-bottom: 0;
 }
 
 .page_404 h3 {
