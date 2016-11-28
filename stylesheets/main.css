@@ -141,6 +141,30 @@ nav ul li {
   margin: .5rem 1rem;
 }
 
+.page_404 {
+  text-align: center;
+}
+
+.page_404 h2 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.page_404 h1 {
+  font-size: 5em;
+  margin: .75rem;
+}
+
+.page_404 h3 {
+  font-weight: 200;
+  font-family: "Martel", serif;
+  margin-top: 2em;
+}
+
+.page_404 a {
+  text-decoration: underline;
+}
+
 .page_title {
   text-align: center;
   text-transform: uppercase;
