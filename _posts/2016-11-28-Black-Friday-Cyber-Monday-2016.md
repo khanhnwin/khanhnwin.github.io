@@ -2,8 +2,6 @@
 layout: post
 title: "Black Friday/Cyber Monday: 2016 Edition"
 date: 2016-11-28
-comments: true
-assets: "/assets/post_images/2016-11-28-BF-CM-2016/"
 ---
 As Thanksgiving weekend comes to a close, I figured I would give a quick recap of my post-Thanksgiving shopping. I didn't make any major purchases, however, I'd say that they're all pretty darn cool. I only went to two physical retail stores: Best Buy <del>and Lord and Taylor.</del><sup>1</sup>
 

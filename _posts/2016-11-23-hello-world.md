@@ -2,9 +2,6 @@
 layout: post
 title: "Hello World!"
 date: 2016-11-23
-comments: true
-featured-image: false
-assets: "/assets/post_images/2016-11-23-hello-world/"
 ---
 Hiya, my name is Khanh. This is my blog. I've written this post about a million times before. I'd start a blog, but then I wouldn't make it very far. Things are a little bit different now. I've always enjoyed writing, but unfortunately, I don't get to do much writing anymore as a computer science student. (Correction: I don't get to write much beyond code and documentation, that is.) So, here we are. My blog.
 

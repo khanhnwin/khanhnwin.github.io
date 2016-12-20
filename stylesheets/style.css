@@ -36,7 +36,7 @@ a:hover {
 
 p {
   font-family: "Martel", serif;
-  line-height: 160%;
+  line-height: 180%;
 }
 
 @media screen and (max-device-width: 800px) {
@@ -244,7 +244,7 @@ nav ul li {
 }
 
 .posts .post .blurb {
-  line-height: 160%;
+  line-height: 180%;
   font-family: "Martel", serif;
 }
 
