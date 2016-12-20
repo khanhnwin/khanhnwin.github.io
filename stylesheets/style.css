@@ -247,7 +247,18 @@ nav ul li {
   font-family: "Martel", serif;
 }
 
-.posts .post img {
+.posts .post figure {
+  margin: 0;
+}
+
+.posts .post figure figcaption {
+  font-family: "Martel", serif;
+  font-weight: 200;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.posts .post figure img {
   width: 100%;
   height: auto;
 }
