@@ -58,7 +58,7 @@ p {
 
 @media (max-width: 1130px) {
   .page_container {
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -139,6 +139,28 @@ nav ul li:last-child {
 nav ul li {
   display: inline-block;
   margin: .5rem 1rem;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.pagination .page_nav {
+  text-transform: uppercase;
+  margin: 0 .5rem;
+}
+
+.pagination .inactive {
+  color: #A8A8A8;
+}
+
+.pagination .previous {
+  margin-right: 1.5rem;
+}
+
+.pagination .next {
+  margin-left: 1.5rem;
 }
 
 .page_404 {
@@ -287,6 +309,76 @@ nav ul li {
   }
 }
 
+.post_page .post {
+  margin-top: 1.65rem;
+}
+
+.post_page .article_bio .pic {
+  width: 15%;
+  height: auto;
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.post_page .article_bio .pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 90%;
+}
+
+.post_page .article_bio .summary {
+  width: 81%;
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.post_page .article_bio .summary h3 {
+  margin: 0;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #A8A8A8;
+}
+
+.post_page .article_bio .summary h3 .light {
+  font-weight: 400;
+}
+
+.post_page .article_bio .summary p {
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .post_page .article_bio .pic, .post_page .article_bio .summary {
+    display: block;
+  }
+  .post_page .article_bio .pic {
+    margin: 0 auto;
+    width: 35%;
+  }
+  .post_page .article_bio .summary {
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-device-width: 700px) {
+  .post_page .article_bio .pic, .post_page .article_bio .summary {
+    display: block;
+  }
+  .post_page .article_bio .pic {
+    margin: 0 auto;
+    width: 35%;
+  }
+  .post_page .article_bio .summary {
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+    margin: 0 auto;
+  }
+}
+
 .post_page img.outset {
   width: 130%;
   height: auto;
@@ -316,10 +408,19 @@ nav ul li {
   margin: auto 0;
 }
 
+.post_page ul {
+  font-family: "Martel", serif;
+}
+
+.post_page ul li {
+  margin-top: 1rem;
+}
+
 .post_page figcaption {
   font-family: "Martel", serif;
   font-weight: 200;
   text-align: center;
+  font-size: 1rem;
 }
 
 .post_page blockquote {
@@ -327,15 +428,21 @@ nav ul li {
   padding: .1rem 2rem;
   border-left: solid 3px #dfe0e0;
   font-style: italic;
+  color: #525252;
 }
 
 .about {
   border-bottom: 1px solid #237AA6;
+  font-family: "Montserrat", sans-serif;
 }
 
 .about h1 {
   text-transform: uppercase;
   text-align: center;
+}
+
+.about p, .about ul {
+  font-family: "Martel", serif;
 }
 
 .about img.outset {

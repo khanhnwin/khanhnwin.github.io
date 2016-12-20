@@ -52,7 +52,7 @@ p
     width: 65%
 
   @media (max-width: 1130px)
-    width: 70%
+    width: 80%
 
   @media (max-width: 800px)
     width: 90%
@@ -106,6 +106,23 @@ nav
     li
       display: inline-block
       margin: .5rem 1rem
+
+.pagination
+  text-align: center
+  margin-top: 1.5rem
+
+  .page_nav
+    text-transform: uppercase
+    margin: 0 .5rem
+
+  .inactive
+    color: #A8A8A8
+
+  .previous
+    margin-right: 1.5rem
+
+  .next
+    margin-left: 1.5rem
 
 // 404 PAGE //
 
@@ -225,6 +242,67 @@ nav
     @media screen and (max-device-width: 800px)
       font-size: 4rem
 
+  .post
+    margin-top: 1.65rem
+
+  .article_bio
+    .pic
+      width: 15%
+      height: auto
+      display: inline-block
+      margin-right: 2%
+
+      img
+        width: 100%
+        height: auto
+        border-radius: 90%
+
+    .summary
+        width: 81%
+        height: auto
+        display: inline-block
+        vertical-align: top
+
+        h3
+          margin: 0
+          padding-bottom: .5rem
+          border-bottom: 1px solid #A8A8A8
+
+          .light
+            font-weight: 400
+        p
+          font-size: 16px
+
+    @media (max-width: 700px)
+      .pic, .summary
+        display: block
+
+      .pic
+        margin: 0 auto
+        width: 35%
+
+      .summary
+        width: 100%
+        text-align: center
+        padding-top: 2rem
+        margin: 0 auto
+
+    @media screen and (max-device-width: 700px)
+      .pic, .summary
+        display: block
+
+      .pic
+        margin: 0 auto
+        width: 35%
+
+      .summary
+        width: 100%
+        text-align: center
+        padding-top: 2rem
+        margin: 0 auto
+
+
+
   img.outset
     width: 130%
     height: auto
@@ -245,24 +323,38 @@ nav
   figure
     margin: auto 0
 
+  ul
+    font-family: $serifFont
+
+    li
+      margin-top: 1rem
+
   figcaption
     font-family: $serifFont
     font-weight: 200
     text-align: center
+    font-size: 1rem
+
 
   blockquote
     font-size: 1.75rem
     padding: .1rem 2rem
     border-left: solid 3px #dfe0e0
     font-style: italic
+    color: #525252
 
 // ABOUT PAGE //
 .about
   border-bottom: 1px solid $SteelBlue
+  font-family: $sansSerifFont
 
   h1
     text-transform: uppercase
     text-align: center
+
+
+  p, ul
+      font-family: $serifFont
 
   img.outset
     width: 130%

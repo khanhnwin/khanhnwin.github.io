@@ -3,12 +3,14 @@ layout: default
 title: Khanh's Blog
 ---
 	<div class="posts">
-		{% for post in site.posts %}
+		{% for post in paginator.posts %}
 			<div class="post">
 					<h4 class="date">{{ post.date | date: "%A – %B %-d, %Y" }}</h4>
 					<a href="{{ post.url }}" title="{{ post.title }}"><h2 class="title">{{ post.title }}</h2></a>
-					{% if post.featured-image == true %}
-						<img src="{{ post.assets }}featured.jpg" />
+					{% if post.images[0]['url'] %}
+						<img class="featured-img" alt="{{ post.images[0]['caption'] }}" title="{{ post.images[0]['caption'] }}" src="{{ post.images[0]['url'] }}" />
+						<br>
+						<br>
 					{% endif %}
 				<div class="blurb">
 					{{ post.excerpt }}
@@ -18,9 +20,39 @@ title: Khanh's Blog
 		{% endfor %}
 	</div>
 
-	<!--<ul class="posts">
+	<div class="pagination">
+		{% if paginator.page == 1 %}
+			<span class="inactive page_nav fa fa-angle-double-left"></span>
+		{% else %}
+			<a class="page_nav fa fa-angle-double-left" href="/"></a>
+		{% endif %}
 
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date: "%B %-d, %Y" }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><p>{{ post.excerpt }}</p></li>
+	  {% if paginator.previous_page %}
+	    <a class="page_nav previous" href="{{ paginator.previous_page_path }}"><span class="fa fa-chevron-left"></span> Previous</a>
+		{% else %}
+			<span class="inactive page_nav previous"><span class="fa fa-chevron-left"></span> Previous</span>
+		{% endif %}
+
+		{% for page in (1..paginator.total_pages) %}
+	    {% if page == paginator.page %}
+	      <span>{{ page }}</span>
+	    {% elsif page == 1 %}
+	      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+	    {% else %}
+	      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+	    {% endif %}
 	  {% endfor %}
-	</ul-->
+
+	  {% if paginator.next_page %}
+	    <a class="page_nav next" href="{{ paginator.next_page_path }}">Next <span class="fa fa-chevron-right"></span></a>
+		{% else %}
+			<span class="inactive page_nav next">Next <span class="fa fa-chevron-right"></span></span>
+	  {% endif %}
+
+		{% if paginator.page == paginator.total_pages %}
+			<span class="inactive page_nav fa fa-angle-double-right"></span>
+		{% else %}
+			<a class="page_nav fa fa-angle-double-right" href="/"></a>
+		{% endif %}
+
+	</div>

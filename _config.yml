@@ -1,3 +1,5 @@
 name: Khanh Nguyen, The Blog
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+paginate: 8
+paginate_path: "/blog/page:num/"

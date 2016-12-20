@@ -2,6 +2,7 @@
 layout: post
 title: "Hello World!"
 date: 2016-11-23
+comments: true
 featured-image: false
 assets: "/assets/post_images/2016-11-23-hello-world/"
 ---
